@@ -1,0 +1,4 @@
+# Permite abrir http://localhost/Cooking_Help_PHP/ sem escrever /public
+RewriteEngine On
+RewriteRule ^public/ - [L]
+RewriteRule ^(.*)$ public/$1 [L]
